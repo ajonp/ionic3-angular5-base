@@ -22,7 +22,7 @@ const routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, { useHash: false }),
-    IonicModule.forRoot(AppComponent),
+    IonicModule.forRoot(AppComponent, { locationStrategy: 'path' }),
   ],
   providers: [],
   bootstrap: [AppComponent]
